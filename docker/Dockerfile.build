@@ -1,0 +1,16 @@
+FROM debian:jessie
+MAINTAINER Adam McCann <mccann232@gmail.com>
+
+RUN apt-get update && apt-get install -yq \
+    gawk \
+    wget \
+    git-core \
+    diffstat \
+    unzip \
+    texinfo \
+    gcc-multilib \
+    build-essential \
+    chrpath \
+    socat \
+    libsdl1.2-dev \
+    xterm
